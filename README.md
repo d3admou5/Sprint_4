@@ -12,11 +12,11 @@
 `test_add_duplicate_book_only_once` - повторное добавление одной и той же книги не дублирует её.
 
 ## Тесты метода `set_book_genre`:
-`test_set_book_genre_conditions` - установка жанра успешна, если книга существует и жанр допустим. Жанр не устанавливается, если он не входит в список genre или книги нет в словаре.
+`test_set_book_genre_valid_for_existing_book` - установка жанра успешна, если книга существует и жанр допустим.
 
 ## Тесты метода `get_book_genre`:
 
-Проверка через `test_set_book_genre_conditions` - возвращает жанр книги (если установлен), иначе пустую строку или `None`.
+Проверка через `test_get_book_genre_by_name_returns_correct_genre` - выводит жанр книги по её имени.
 
 ## Тест метода `get_books_with_specific_genre`:
 
